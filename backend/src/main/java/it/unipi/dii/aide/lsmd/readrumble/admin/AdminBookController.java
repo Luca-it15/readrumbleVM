@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/admin/book")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://10.1.1.43:3000")
 public class AdminBookController {
 
         AdminBookDAO adminBookDAO;

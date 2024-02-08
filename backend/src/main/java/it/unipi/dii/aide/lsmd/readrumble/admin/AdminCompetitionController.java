@@ -8,7 +8,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/admin/competition")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://10.1.1.43:3000")
 public class AdminCompetitionController {
     private AdminCompetitionDAO adminCompetitionDAO;
     public AdminCompetitionController() {

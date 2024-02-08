@@ -14,7 +14,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/competition")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://10.1.1.43:3000")
 public class CompetitionController {
     private CompetitionDAO competitionDAO;
 

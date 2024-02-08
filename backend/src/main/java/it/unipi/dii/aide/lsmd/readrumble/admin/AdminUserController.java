@@ -17,7 +17,7 @@ import static com.mongodb.client.model.Updates.set;
 
 @RestController
 @RequestMapping("/api/admin/user")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://10.1.1.43:3000")
 public class AdminUserController {
 
     private AdminUserDAO adminUserDAO;

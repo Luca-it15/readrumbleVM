@@ -10,7 +10,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/book")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://10.1.1.43:3000")
 public class BookController {
     private final BookDAO bookDAO = new BookDAO();
     private static final LibraryBookDAO  abd = new LibraryBookDAO();

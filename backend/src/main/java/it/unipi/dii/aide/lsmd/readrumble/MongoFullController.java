@@ -18,7 +18,7 @@ import it.unipi.dii.aide.lsmd.readrumble.config.database.MongoConfig;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://10.1.1.43:3000")
 public class MongoFullController {
     private final UserController userController;
     private final CompetitionController competitionController;
