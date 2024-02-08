@@ -8,6 +8,7 @@ import BookSelector from '../components/BookSelector';
 import IosShareTwoToneIcon from '@mui/icons-material/IosShareTwoTone';
 import {Grid, Paper, Typography} from '@mui/material';
 import {blue} from "@mui/material/colors";
+import { useNavigate } from 'react-router-dom';
 
 export default function PostForm() {
 
@@ -21,11 +22,13 @@ export default function PostForm() {
         console.log('La chiave "logged_user" non è presente in localStorage.');
     }
 
+    const navigate = useNavigate(); 
+
     function timeout_text() {
         setTimeout(function () {
             // Azione da compiere dopo 1 secondo
             setSubmitStatus({message: '', variant: 'success'});
-            return window.location.href = "http://localhost:3000/profile";
+            navigate(-1); 
         }, 12000)
     }
 
@@ -33,7 +36,7 @@ export default function PostForm() {
         setTimeout(function () {
             // Azione da compiere dopo 1 secondo
             setSubmitStatus({message: '', variant: 'error'});
-            return window.location.href = "http://localhost:3000/profile";
+            navigate(-1); 
         }, 24000)
     }
 

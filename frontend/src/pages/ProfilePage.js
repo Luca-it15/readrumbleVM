@@ -67,11 +67,11 @@ const ProfilePage = () => {
     }
 
     function goSettings() {
-        return window.location.href = "http://localhost:3000/settings";
+        return window.location.href = "http://10.1.1.43:3000/settings";
     }
 
     function goDashboard() {
-        return window.location.href = "http://localhost:3000/dashboard";
+        return window.location.href = "http://10.1.1.43:3000/dashboard";
     }
 
     function goPost() {
